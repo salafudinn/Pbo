@@ -1,5 +1,5 @@
 <?php
-//CollectionInterface - Interface dasar untuk semua collection
+// CollectionInterface
 interface CollectionInterface{
     public function size(): int;
     public function isEmpty(): bool;
@@ -7,8 +7,7 @@ interface CollectionInterface{
     public function contains($element): bool;
     public function toArray(): array;
 }
-
-//ListInterface - Collection berurutan dengan akses index
+// ListInterface
 interface ListInterface extends CollectionInterface{
     public function add($element): void;
     public function get(int $index);
@@ -91,4 +90,5 @@ class CollectionIterator implements CustomIteratorInterface
         $this->position = 0;
     }
 }
+
 ?>
