@@ -32,7 +32,7 @@ interface StackInterface extends CollectionInterface{
     public function peek();
 }
 
-//MapInterface - Penyimpanan key-value pairs
+//MapInterface 
 interface MapInterface extends CollectionInterface
 {
     public function put($key, $value): void;
@@ -44,7 +44,7 @@ interface MapInterface extends CollectionInterface
     public function values(): array;
 }
 
-//IteratorInterface - Interface untuk iterasi custom
+//IteratorInterface 
 interface CustomIteratorInterface
 {
     public function hasNext(): bool;
@@ -53,7 +53,7 @@ interface CustomIteratorInterface
     public function reset(): void;
 }
 
-// CollectionIterator - Iterator untuk collection
+// CollectionIterator 
 class CollectionIterator implements CustomIteratorInterface
 {
     private array $elements;
@@ -92,3 +92,4 @@ class CollectionIterator implements CustomIteratorInterface
 }
 
 ?>
+
